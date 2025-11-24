@@ -45,7 +45,7 @@ def menu():
             # Save the game result automatically (if game finished)
             if game_result:
                 file_manager.save_result(game_result)
-                print("\n✓ Game result saved.")
+                print("\nGame result saved.")
 
         # ================= RESUME SAVED GAME =================
         elif choice == "2" and has_save:
@@ -60,7 +60,7 @@ def menu():
                 # Save result if game finished
                 if game_result:
                     file_manager.save_result(game_result)
-                    print("\n✓ Game result saved.")
+                    print("\nGame result saved.")
             else:
                 print("❌ Failed to load saved game.")
 
@@ -80,7 +80,7 @@ def menu():
             if confirm == "y":
                 cleared = file_manager.clear_results()
                 if cleared:
-                    print("✓ All results cleared.")
+                    print("All results cleared.")
                 else:
                     print("No results file found.")
             else:
@@ -92,7 +92,7 @@ def menu():
             confirm = input("Are you sure you want to delete the saved game? (y/n): ").lower()
             if confirm == "y":
                 if file_manager.delete_saved_game():
-                    print("✓ Saved game deleted.")
+                    print("Saved game deleted.")
                 else:
                     print("No saved game found.")
             else:

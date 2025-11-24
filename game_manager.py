@@ -96,7 +96,7 @@ def game(loaded_state=None):
                     # Check if user wants to save
                     if user_input == "save":
                         save_current_game(user_board, comp_board, user_turns, comp_turns, round_num)
-                        print("\n✓ Game saved! You can resume later.")
+                        print("\nGame saved! You can resume later.")
                         return None  # Exit without a result
                     
                     # Parse the row and column
