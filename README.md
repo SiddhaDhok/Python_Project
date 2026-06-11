@@ -1,4 +1,4 @@
-PYTHON_PROJECT
+PYTHON-PROJECT
 # **Battleship Game**
 
 A command-line implementation of the classic Battleship game where you face off against an AI opponent in turn-based naval combat.
